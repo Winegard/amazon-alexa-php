@@ -45,7 +45,7 @@ class AccountInformationHelper
         $token    = $request->context->system->apiAccessToken;
         $endpoint = $request->context->system->apiEndpoint;
 
-        $url = sprintf('%s/v1/accounts/%s/settings/Profile.email', $endpoint, $deviceId);
+        $url = sprintf('%s/v2/accounts/~current/settings/Profile.email', $endpoint);
 
         return $this->apiCall($url, $token);
     }
