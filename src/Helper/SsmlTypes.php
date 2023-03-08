@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Helper;
+namespace Winegard\AmazonAlexa\Helper;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

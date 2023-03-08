@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response;
+namespace Winegard\AmazonAlexa\Response;
 
-use MaxBeckers\AmazonAlexa\Helper\SerializeValueMapper;
-use MaxBeckers\AmazonAlexa\Response\Directives\Directive;
+use Winegard\AmazonAlexa\Helper\SerializeValueMapper;
+use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

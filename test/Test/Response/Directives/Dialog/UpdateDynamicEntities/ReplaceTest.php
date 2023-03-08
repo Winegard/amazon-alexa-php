@@ -1,10 +1,10 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives\Dialog\UpdateDynamicEntities;
+namespace Winegard\AmazonAlexa\Test\Response\Directives\Dialog\UpdateDynamicEntities;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\Dialog\Entity\Type;
-use MaxBeckers\AmazonAlexa\Response\Directives\Dialog\Entity\TypeValue;
-use MaxBeckers\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities\Replace;
+use Winegard\AmazonAlexa\Response\Directives\Dialog\Entity\Type;
+use Winegard\AmazonAlexa\Response\Directives\Dialog\Entity\TypeValue;
+use Winegard\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities\Replace;
 use PHPUnit\Framework\TestCase;
 
 class ReplaceTest extends TestCase

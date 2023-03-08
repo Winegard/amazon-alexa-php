@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\RequestHandler;
+namespace Winegard\AmazonAlexa\RequestHandler;
 
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Response\Response;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

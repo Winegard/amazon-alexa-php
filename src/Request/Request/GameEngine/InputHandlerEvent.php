@@ -1,10 +1,10 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\GameEngine;
+namespace Winegard\AmazonAlexa\Request\Request\GameEngine;
 
-use MaxBeckers\AmazonAlexa\Request\Request\AbstractRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\GameEngine\Event\Event;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\StandardRequest;
+use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
+use Winegard\AmazonAlexa\Request\Request\GameEngine\Event\Event;
+use Winegard\AmazonAlexa\Request\Request\Standard\StandardRequest;
 
 /**
  * @author Fabian Graßl <fabian.grassl@db-n.com>

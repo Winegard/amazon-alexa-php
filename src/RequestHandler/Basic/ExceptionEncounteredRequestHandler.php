@@ -1,12 +1,12 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\RequestHandler\Basic;
+namespace Winegard\AmazonAlexa\RequestHandler\Basic;
 
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\System\ExceptionEncounteredRequest;
-use MaxBeckers\AmazonAlexa\RequestHandler\AbstractRequestHandler;
-use MaxBeckers\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\System\ExceptionEncounteredRequest;
+use Winegard\AmazonAlexa\RequestHandler\AbstractRequestHandler;
+use Winegard\AmazonAlexa\Response\Response;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

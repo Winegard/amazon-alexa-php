@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\CanFulfill\CanFulfillIntentRequest;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\CanFulfill\CanFulfillIntentRequest;
 use PHPUnit\Framework\TestCase;
 
 /**

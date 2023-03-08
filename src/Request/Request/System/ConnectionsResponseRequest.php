@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\System;
+namespace Winegard\AmazonAlexa\Request\Request\System;
 
-use MaxBeckers\AmazonAlexa\Helper\PropertyHelper;
-use MaxBeckers\AmazonAlexa\Request\Request\AbstractRequest;
+use Winegard\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
  * @author Charlie Root <charlie@chrl.ru>

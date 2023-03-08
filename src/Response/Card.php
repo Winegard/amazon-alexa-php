@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response;
+namespace Winegard\AmazonAlexa\Response;
 
-use MaxBeckers\AmazonAlexa\Exception\InvalidCardPermissionsException;
-use MaxBeckers\AmazonAlexa\Helper\SerializeValueMapper;
+use Winegard\AmazonAlexa\Exception\InvalidCardPermissionsException;
+use Winegard\AmazonAlexa\Helper\SerializeValueMapper;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

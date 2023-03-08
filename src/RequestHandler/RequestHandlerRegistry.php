@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\RequestHandler;
+namespace Winegard\AmazonAlexa\RequestHandler;
 
-use MaxBeckers\AmazonAlexa\Exception\MissingRequestHandlerException;
-use MaxBeckers\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Exception\MissingRequestHandlerException;
+use Winegard\AmazonAlexa\Request\Request;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

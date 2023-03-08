@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\GameEngine;
+namespace Winegard\AmazonAlexa\Response\Directives\GameEngine;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

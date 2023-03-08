@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Helper;
+namespace Winegard\AmazonAlexa\Helper;
 
 /**
  * This trait is helpful for the property to ArrayObject mapping.

@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\CanFulfill;
+namespace Winegard\AmazonAlexa\Response\CanFulfill;
 
-use MaxBeckers\AmazonAlexa\Response\ResponseBodyInterface;
+use Winegard\AmazonAlexa\Response\ResponseBodyInterface;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

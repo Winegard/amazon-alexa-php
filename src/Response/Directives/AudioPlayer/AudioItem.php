@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer;
+namespace Winegard\AmazonAlexa\Response\Directives\AudioPlayer;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

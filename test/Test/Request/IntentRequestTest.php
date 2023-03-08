@@ -1,11 +1,11 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Exception\MissingRequestDataException;
-use MaxBeckers\AmazonAlexa\Exception\MissingRequiredHeaderException;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest;
+use Winegard\AmazonAlexa\Exception\MissingRequestDataException;
+use Winegard\AmazonAlexa\Exception\MissingRequiredHeaderException;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
 use PHPUnit\Framework\TestCase;
 
 /**

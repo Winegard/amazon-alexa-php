@@ -1,11 +1,11 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives;
+namespace Winegard\AmazonAlexa\Test\Response\Directives;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\GadgetController\Animation;
-use MaxBeckers\AmazonAlexa\Response\Directives\GadgetController\Parameters;
-use MaxBeckers\AmazonAlexa\Response\Directives\GadgetController\Sequence;
-use MaxBeckers\AmazonAlexa\Response\Directives\GadgetController\SetLightDirective;
+use Winegard\AmazonAlexa\Response\Directives\GadgetController\Animation;
+use Winegard\AmazonAlexa\Response\Directives\GadgetController\Parameters;
+use Winegard\AmazonAlexa\Response\Directives\GadgetController\Sequence;
+use Winegard\AmazonAlexa\Response\Directives\GadgetController\SetLightDirective;
 use PHPUnit\Framework\TestCase;
 
 /**

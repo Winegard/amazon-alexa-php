@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\Display;
+namespace Winegard\AmazonAlexa\Response\Directives\Display;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\Directive;
+use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

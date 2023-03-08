@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\GameEngine\Event;
+namespace Winegard\AmazonAlexa\Request\Request\GameEngine\Event;
 
 /**
  * @author Fabian Graßl <fabian.grassl@db-n.com>

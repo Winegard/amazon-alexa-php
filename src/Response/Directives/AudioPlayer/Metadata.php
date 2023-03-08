@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer;
+namespace Winegard\AmazonAlexa\Response\Directives\AudioPlayer;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\Image;
+use Winegard\AmazonAlexa\Response\Directives\Display\Image;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

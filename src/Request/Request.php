@@ -1,33 +1,33 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request;
+namespace Winegard\AmazonAlexa\Request;
 
-use MaxBeckers\AmazonAlexa\Exception\MissingRequestDataException;
-use MaxBeckers\AmazonAlexa\Exception\MissingRequiredHeaderException;
-use MaxBeckers\AmazonAlexa\Helper\PropertyHelper;
-use MaxBeckers\AmazonAlexa\Request\Request\AbstractRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillAccountLinkedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillEnabledRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionAcceptedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionChangedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFailedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFinishedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackNearlyFinishedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStartedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStoppedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\CanFulfill\CanFulfillIntentRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\Display\ElementSelectedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\GameEngine\InputHandlerEvent;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\NextCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\PauseCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\PlayCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\PreviousCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\LaunchRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\SessionEndedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\System\ConnectionsResponseRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\System\ExceptionEncounteredRequest;
+use Winegard\AmazonAlexa\Exception\MissingRequestDataException;
+use Winegard\AmazonAlexa\Exception\MissingRequiredHeaderException;
+use Winegard\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillAccountLinkedRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillEnabledRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionAcceptedRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionChangedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFailedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFinishedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackNearlyFinishedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStartedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStoppedRequest;
+use Winegard\AmazonAlexa\Request\Request\CanFulfill\CanFulfillIntentRequest;
+use Winegard\AmazonAlexa\Request\Request\Display\ElementSelectedRequest;
+use Winegard\AmazonAlexa\Request\Request\GameEngine\InputHandlerEvent;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\NextCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\PauseCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\PlayCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\PreviousCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
+use Winegard\AmazonAlexa\Request\Request\Standard\LaunchRequest;
+use Winegard\AmazonAlexa\Request\Request\Standard\SessionEndedRequest;
+use Winegard\AmazonAlexa\Request\Request\System\ConnectionsResponseRequest;
+use Winegard\AmazonAlexa\Request\Request\System\ExceptionEncounteredRequest;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

@@ -1,17 +1,17 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\RequestHandler;
+namespace Winegard\AmazonAlexa\Test\RequestHandler;
 
-use MaxBeckers\AmazonAlexa\Exception\MissingRequestHandlerException;
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
-use MaxBeckers\AmazonAlexa\Request\Application;
-use MaxBeckers\AmazonAlexa\Request\Context;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest;
-use MaxBeckers\AmazonAlexa\Request\System;
-use MaxBeckers\AmazonAlexa\RequestHandler\AbstractRequestHandler;
-use MaxBeckers\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
-use MaxBeckers\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Exception\MissingRequestHandlerException;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Request\Application;
+use Winegard\AmazonAlexa\Request\Context;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
+use Winegard\AmazonAlexa\Request\System;
+use Winegard\AmazonAlexa\RequestHandler\AbstractRequestHandler;
+use Winegard\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
+use Winegard\AmazonAlexa\Response\Response;
 use PHPUnit\Framework\TestCase;
 
 /**

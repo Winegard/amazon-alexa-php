@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Intent;
+namespace Winegard\AmazonAlexa\Test\Intent;
 
-use MaxBeckers\AmazonAlexa\Intent\IntentValue;
-use MaxBeckers\AmazonAlexa\Intent\Slot;
+use Winegard\AmazonAlexa\Intent\IntentValue;
+use Winegard\AmazonAlexa\Intent\Slot;
 use PHPUnit\Framework\TestCase;
 
 /**

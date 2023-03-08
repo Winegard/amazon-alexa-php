@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request;
+namespace Winegard\AmazonAlexa\Request;
 
-use MaxBeckers\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Helper\PropertyHelper;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

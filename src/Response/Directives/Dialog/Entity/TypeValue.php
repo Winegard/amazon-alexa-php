@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\Dialog\Entity;
+namespace Winegard\AmazonAlexa\Response\Directives\Dialog\Entity;
 
 class TypeValue implements \JsonSerializable
 {

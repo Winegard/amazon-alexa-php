@@ -1,11 +1,11 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\GameEngine\Event\Event;
-use MaxBeckers\AmazonAlexa\Request\Request\GameEngine\Event\InputEvent;
-use MaxBeckers\AmazonAlexa\Request\Request\GameEngine\InputHandlerEvent;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\GameEngine\Event\Event;
+use Winegard\AmazonAlexa\Request\Request\GameEngine\Event\InputEvent;
+use Winegard\AmazonAlexa\Request\Request\GameEngine\InputHandlerEvent;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -14,12 +14,12 @@ use PHPUnit\Framework\TestCase;
 class InputHandlerEventTest extends TestCase
 {
     /**
-     * @throws \MaxBeckers\AmazonAlexa\Exception\MissingRequestDataException
-     * @throws \MaxBeckers\AmazonAlexa\Exception\MissingRequiredHeaderException
+     * @throws \Winegard\AmazonAlexa\Exception\MissingRequestDataException
+     * @throws \Winegard\AmazonAlexa\Exception\MissingRequiredHeaderException
      *
-     * @covers \MaxBeckers\AmazonAlexa\Request\Request\GameEngine\InputHandlerEvent::fromAmazonRequest
-     * @covers \MaxBeckers\AmazonAlexa\Request\Request\GameEngine\Event\Event::fromAmazonRequest
-     * @covers \MaxBeckers\AmazonAlexa\Request\Request\GameEngine\Event\InputEvent::fromAmazonRequest
+     * @covers \Winegard\AmazonAlexa\Request\Request\GameEngine\InputHandlerEvent::fromAmazonRequest
+     * @covers \Winegard\AmazonAlexa\Request\Request\GameEngine\Event\Event::fromAmazonRequest
+     * @covers \Winegard\AmazonAlexa\Request\Request\GameEngine\Event\InputEvent::fromAmazonRequest
      */
     public function testIntentRequest()
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFailedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFinishedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackNearlyFinishedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStartedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStoppedRequest;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFailedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackFinishedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackNearlyFinishedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStartedRequest;
+use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStoppedRequest;
 use PHPUnit\Framework\TestCase;
 
 /**

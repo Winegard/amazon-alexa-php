@@ -1,12 +1,12 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Helper;
+namespace Winegard\AmazonAlexa\Helper;
 
 use GuzzleHttp\Client;
-use MaxBeckers\AmazonAlexa\Exception\DeviceApiCallException;
-use MaxBeckers\AmazonAlexa\Exception\MissingRequestDataException;
-use MaxBeckers\AmazonAlexa\Request\Device\DeviceAddressInformation;
-use MaxBeckers\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Exception\DeviceApiCallException;
+use Winegard\AmazonAlexa\Exception\MissingRequestDataException;
+use Winegard\AmazonAlexa\Request\Device\DeviceAddressInformation;
+use Winegard\AmazonAlexa\Request\Request;
 
 /**
  * This helper class can call the amazon api to get address information.

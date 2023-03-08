@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer;
+namespace Winegard\AmazonAlexa\Response\Directives\AudioPlayer;
 
-use MaxBeckers\AmazonAlexa\Helper\SerializeValueMapper;
+use Winegard\AmazonAlexa\Helper\SerializeValueMapper;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

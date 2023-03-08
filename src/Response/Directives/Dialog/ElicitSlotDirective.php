@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\Dialog;
+namespace Winegard\AmazonAlexa\Response\Directives\Dialog;
 
-use MaxBeckers\AmazonAlexa\Intent\Intent;
-use MaxBeckers\AmazonAlexa\Response\Directives\Directive;
+use Winegard\AmazonAlexa\Intent\Intent;
+use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

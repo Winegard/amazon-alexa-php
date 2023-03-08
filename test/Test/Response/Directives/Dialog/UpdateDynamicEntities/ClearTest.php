@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives\Dialog\UpdateDynamicEntities;
+namespace Winegard\AmazonAlexa\Test\Response\Directives\Dialog\UpdateDynamicEntities;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities\Clear;
+use Winegard\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities\Clear;
 use PHPUnit\Framework\TestCase;
 
 class ClearTest extends TestCase

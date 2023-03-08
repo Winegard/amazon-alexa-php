@@ -1,13 +1,13 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Helper;
+namespace Winegard\AmazonAlexa\Helper;
 
-use MaxBeckers\AmazonAlexa\Response\Card;
-use MaxBeckers\AmazonAlexa\Response\Directives\Directive;
-use MaxBeckers\AmazonAlexa\Response\OutputSpeech;
-use MaxBeckers\AmazonAlexa\Response\Reprompt;
-use MaxBeckers\AmazonAlexa\Response\Response;
-use MaxBeckers\AmazonAlexa\Response\ResponseBody;
+use Winegard\AmazonAlexa\Response\Card;
+use Winegard\AmazonAlexa\Response\Directives\Directive;
+use Winegard\AmazonAlexa\Response\OutputSpeech;
+use Winegard\AmazonAlexa\Response\Reprompt;
+use Winegard\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Response\ResponseBody;
 
 /**
  * This helper class can create simple responses for the most needed intents.

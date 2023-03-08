@@ -1,14 +1,14 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives;
+namespace Winegard\AmazonAlexa\Test\Response\Directives;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\Event;
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\Pattern;
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\RecognizerDeviation;
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\RecognizerMatch;
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\RecognizerProgress;
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\StartInputHandlerDirective;
-use MaxBeckers\AmazonAlexa\Response\Directives\GameEngine\StopInputHandlerDirective;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\Event;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\Pattern;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\RecognizerDeviation;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\RecognizerMatch;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\RecognizerProgress;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\StartInputHandlerDirective;
+use Winegard\AmazonAlexa\Response\Directives\GameEngine\StopInputHandlerDirective;
 use PHPUnit\Framework\TestCase;
 
 /**

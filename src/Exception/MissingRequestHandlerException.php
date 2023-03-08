@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Exception;
+namespace Winegard\AmazonAlexa\Exception;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

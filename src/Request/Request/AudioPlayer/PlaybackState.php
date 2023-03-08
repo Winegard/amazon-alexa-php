@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\AudioPlayer;
+namespace Winegard\AmazonAlexa\Request\Request\AudioPlayer;
 
-use MaxBeckers\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Helper\PropertyHelper;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

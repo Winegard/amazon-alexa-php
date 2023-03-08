@@ -1,10 +1,10 @@
 <?php
 
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest;
-use MaxBeckers\AmazonAlexa\RequestHandler\AbstractRequestHandler;
-use MaxBeckers\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
+use Winegard\AmazonAlexa\RequestHandler\AbstractRequestHandler;
+use Winegard\AmazonAlexa\Response\Response;
 
 /**
  * Just a simple example request handler.

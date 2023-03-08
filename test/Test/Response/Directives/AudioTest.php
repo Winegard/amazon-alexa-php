@@ -1,15 +1,15 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives;
+namespace Winegard\AmazonAlexa\Test\Response\Directives;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer\AudioItem;
-use MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer\ClearDirective;
-use MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer\Metadata;
-use MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer\PlayDirective;
-use MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer\StopDirective;
-use MaxBeckers\AmazonAlexa\Response\Directives\AudioPlayer\Stream;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\Image;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\ImageSource;
+use Winegard\AmazonAlexa\Response\Directives\AudioPlayer\AudioItem;
+use Winegard\AmazonAlexa\Response\Directives\AudioPlayer\ClearDirective;
+use Winegard\AmazonAlexa\Response\Directives\AudioPlayer\Metadata;
+use Winegard\AmazonAlexa\Response\Directives\AudioPlayer\PlayDirective;
+use Winegard\AmazonAlexa\Response\Directives\AudioPlayer\StopDirective;
+use Winegard\AmazonAlexa\Response\Directives\AudioPlayer\Stream;
+use Winegard\AmazonAlexa\Response\Directives\Display\Image;
+use Winegard\AmazonAlexa\Response\Directives\Display\ImageSource;
 use PHPUnit\Framework\TestCase;
 
 /**

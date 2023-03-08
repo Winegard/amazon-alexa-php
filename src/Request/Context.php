@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request;
+namespace Winegard\AmazonAlexa\Request;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

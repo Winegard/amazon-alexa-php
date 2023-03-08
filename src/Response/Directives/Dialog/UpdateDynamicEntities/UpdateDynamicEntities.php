@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities;
+namespace Winegard\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\Directive;
+use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 abstract class UpdateDynamicEntities extends Directive
 {

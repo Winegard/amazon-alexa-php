@@ -1,14 +1,14 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillAccountLinkedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledBody;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillEnabledRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionAcceptedRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionChangedRequest;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillAccountLinkedRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledBody;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillEnabledRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionAcceptedRequest;
+use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionChangedRequest;
 use PHPUnit\Framework\TestCase;
 
 /**

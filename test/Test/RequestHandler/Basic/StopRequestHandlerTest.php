@@ -1,12 +1,12 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\RequestHandler\Basic;
+namespace Winegard\AmazonAlexa\Test\RequestHandler\Basic;
 
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\RequestHandler\Basic\StopRequestHandler;
-use MaxBeckers\AmazonAlexa\Response\Response;
-use MaxBeckers\AmazonAlexa\Response\ResponseBody;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\RequestHandler\Basic\StopRequestHandler;
+use Winegard\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Response\ResponseBody;
 use PHPUnit\Framework\TestCase;
 
 /**

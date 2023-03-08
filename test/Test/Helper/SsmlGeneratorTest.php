@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Helper;
+namespace Winegard\AmazonAlexa\Test\Helper;
 
-use MaxBeckers\AmazonAlexa\Exception\InvalidSsmlException;
-use MaxBeckers\AmazonAlexa\Helper\SsmlGenerator;
+use Winegard\AmazonAlexa\Exception\InvalidSsmlException;
+use Winegard\AmazonAlexa\Helper\SsmlGenerator;
 use PHPUnit\Framework\TestCase;
 
 /**

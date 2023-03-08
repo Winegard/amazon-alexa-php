@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives\Dialog\Entity;
+namespace Winegard\AmazonAlexa\Test\Response\Directives\Dialog\Entity;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\Dialog\Entity\TypeValue;
+use Winegard\AmazonAlexa\Response\Directives\Dialog\Entity\TypeValue;
 use PHPUnit\Framework\TestCase;
 
 class TypeValueTest extends TestCase

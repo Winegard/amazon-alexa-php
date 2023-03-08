@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Helper;
+namespace Winegard\AmazonAlexa\Helper;
 
-use MaxBeckers\AmazonAlexa\Exception\InvalidSsmlException;
+use Winegard\AmazonAlexa\Exception\InvalidSsmlException;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

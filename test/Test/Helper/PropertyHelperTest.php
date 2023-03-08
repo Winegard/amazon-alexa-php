@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Helper;
+namespace Winegard\AmazonAlexa\Test\Helper;
 
-use MaxBeckers\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Helper\PropertyHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

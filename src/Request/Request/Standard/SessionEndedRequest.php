@@ -1,10 +1,10 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\Standard;
+namespace Winegard\AmazonAlexa\Request\Request\Standard;
 
-use MaxBeckers\AmazonAlexa\Helper\PropertyHelper;
-use MaxBeckers\AmazonAlexa\Request\Request\AbstractRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\Error;
+use Winegard\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
+use Winegard\AmazonAlexa\Request\Request\Error;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

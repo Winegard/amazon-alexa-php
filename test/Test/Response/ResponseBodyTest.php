@@ -1,13 +1,13 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response;
+namespace Winegard\AmazonAlexa\Test\Response;
 
 use ArrayObject;
-use MaxBeckers\AmazonAlexa\Response\Card;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\RenderTemplateDirective;
-use MaxBeckers\AmazonAlexa\Response\OutputSpeech;
-use MaxBeckers\AmazonAlexa\Response\Reprompt;
-use MaxBeckers\AmazonAlexa\Response\ResponseBody;
+use Winegard\AmazonAlexa\Response\Card;
+use Winegard\AmazonAlexa\Response\Directives\Display\RenderTemplateDirective;
+use Winegard\AmazonAlexa\Response\OutputSpeech;
+use Winegard\AmazonAlexa\Response\Reprompt;
+use Winegard\AmazonAlexa\Response\ResponseBody;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives;
+namespace Winegard\AmazonAlexa\Test\Response\Directives;
 
-use MaxBeckers\AmazonAlexa\Response\Directives\VideoApp\Metadata;
-use MaxBeckers\AmazonAlexa\Response\Directives\VideoApp\VideoItem;
-use MaxBeckers\AmazonAlexa\Response\Directives\VideoApp\VideoLaunchDirective;
+use Winegard\AmazonAlexa\Response\Directives\VideoApp\Metadata;
+use Winegard\AmazonAlexa\Response\Directives\VideoApp\VideoItem;
+use Winegard\AmazonAlexa\Response\Directives\VideoApp\VideoLaunchDirective;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,12 +1,12 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Validation;
+namespace Winegard\AmazonAlexa\Validation;
 
 use GuzzleHttp\Client;
-use MaxBeckers\AmazonAlexa\Exception\OutdatedCertExceptionException;
-use MaxBeckers\AmazonAlexa\Exception\RequestInvalidSignatureException;
-use MaxBeckers\AmazonAlexa\Exception\RequestInvalidTimestampException;
-use MaxBeckers\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Exception\OutdatedCertExceptionException;
+use Winegard\AmazonAlexa\Exception\RequestInvalidSignatureException;
+use Winegard\AmazonAlexa\Exception\RequestInvalidTimestampException;
+use Winegard\AmazonAlexa\Request\Request;
 
 /**
  * This is a validator for amazon echo requests. It validates the timestamp of the request and the request signature.

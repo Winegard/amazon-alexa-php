@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\CanFulfill;
+namespace Winegard\AmazonAlexa\Request\Request\CanFulfill;
 
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest;
+use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

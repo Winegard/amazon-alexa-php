@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\AlexaSkillEvent;
+namespace Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

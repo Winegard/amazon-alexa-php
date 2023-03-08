@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Request\Request\Display\ElementSelectedRequest;
+use Winegard\AmazonAlexa\Request\Request\Display\ElementSelectedRequest;
 use PHPUnit\Framework\TestCase;
 
 /**

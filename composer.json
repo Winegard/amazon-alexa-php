@@ -44,12 +44,12 @@
   },
   "autoload": {
     "psr-4": {
-      "MaxBeckers\\AmazonAlexa\\": "src/"
+      "Winegard\\AmazonAlexa\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "MaxBeckers\\AmazonAlexa\\Test\\": "test/Test/"
+      "Winegard\\AmazonAlexa\\Test\\": "test/Test/"
     }
   },
   "scripts": {

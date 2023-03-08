@@ -1,11 +1,11 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response;
+namespace Winegard\AmazonAlexa\Test\Response;
 
 use ArrayObject;
-use MaxBeckers\AmazonAlexa\Exception\InvalidCardPermissionsException;
-use MaxBeckers\AmazonAlexa\Response\Card;
-use MaxBeckers\AmazonAlexa\Response\CardImage;
+use Winegard\AmazonAlexa\Exception\InvalidCardPermissionsException;
+use Winegard\AmazonAlexa\Response\Card;
+use Winegard\AmazonAlexa\Response\CardImage;
 use PHPUnit\Framework\TestCase;
 
 /**

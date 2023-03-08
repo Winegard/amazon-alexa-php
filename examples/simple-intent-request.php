@@ -1,10 +1,10 @@
 <?php
 
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\RequestHandler\Basic\HelpRequestHandler;
-use MaxBeckers\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
-use MaxBeckers\AmazonAlexa\Validation\RequestValidator;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\RequestHandler\Basic\HelpRequestHandler;
+use Winegard\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
+use Winegard\AmazonAlexa\Validation\RequestValidator;
 
 require '../vendor/autoload.php';
 require 'Handlers/SimpleIntentRequestHandler.php';

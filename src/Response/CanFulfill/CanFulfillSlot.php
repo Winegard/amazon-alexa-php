@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\CanFulfill;
+namespace Winegard\AmazonAlexa\Response\CanFulfill;
 
 /**
  * @author Maximilian Beckers <beckers.maximilian@gmail.com>

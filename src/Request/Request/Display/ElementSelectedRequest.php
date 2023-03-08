@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Request\Request\Display;
+namespace Winegard\AmazonAlexa\Request\Request\Display;
 
-use MaxBeckers\AmazonAlexa\Request\Request\AbstractRequest;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\StandardRequest;
+use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
+use Winegard\AmazonAlexa\Request\Request\Standard\StandardRequest;
 
 /**
  * @author Fabian Graßl <fabian.grassl@db-n.com>

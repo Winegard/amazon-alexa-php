@@ -1,11 +1,11 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response;
+namespace Winegard\AmazonAlexa\Test\Response;
 
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
-use MaxBeckers\AmazonAlexa\Response\Card;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\RenderTemplateDirective;
-use MaxBeckers\AmazonAlexa\Response\OutputSpeech;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Response\Card;
+use Winegard\AmazonAlexa\Response\Directives\Display\RenderTemplateDirective;
+use Winegard\AmazonAlexa\Response\OutputSpeech;
 use PHPUnit\Framework\TestCase;
 
 /**

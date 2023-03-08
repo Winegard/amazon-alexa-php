@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives\Display;
+namespace Winegard\AmazonAlexa\Test\Response\Directives\Display;
 
 use ArrayObject;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\TextContent;
+use Winegard\AmazonAlexa\Response\Directives\Display\TextContent;
 use PHPUnit\Framework\TestCase;
 
 class TextContentTest extends TestCase

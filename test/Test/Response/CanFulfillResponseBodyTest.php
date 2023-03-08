@@ -1,10 +1,10 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response;
+namespace Winegard\AmazonAlexa\Test\Response;
 
-use MaxBeckers\AmazonAlexa\Response\CanFulfill\CanFulfillIntentResponse;
-use MaxBeckers\AmazonAlexa\Response\CanFulfill\CanFulfillResponseBody;
-use MaxBeckers\AmazonAlexa\Response\CanFulfill\CanFulfillSlot;
+use Winegard\AmazonAlexa\Response\CanFulfill\CanFulfillIntentResponse;
+use Winegard\AmazonAlexa\Response\CanFulfill\CanFulfillResponseBody;
+use Winegard\AmazonAlexa\Response\CanFulfill\CanFulfillSlot;
 use PHPUnit\Framework\TestCase;
 
 /**

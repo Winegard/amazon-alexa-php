@@ -1,12 +1,12 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Request;
+namespace Winegard\AmazonAlexa\Test\Request;
 
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\NextCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\PauseCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\PlayCommandIssued;
-use MaxBeckers\AmazonAlexa\Request\Request\PlaybackController\PreviousCommandIssued;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\NextCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\PauseCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\PlayCommandIssued;
+use Winegard\AmazonAlexa\Request\Request\PlaybackController\PreviousCommandIssued;
 use PHPUnit\Framework\TestCase;
 
 /**

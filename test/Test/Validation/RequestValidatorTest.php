@@ -1,13 +1,13 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Validation;
+namespace Winegard\AmazonAlexa\Test\Validation;
 
 use GuzzleHttp\Client;
-use MaxBeckers\AmazonAlexa\Exception\RequestInvalidSignatureException;
-use MaxBeckers\AmazonAlexa\Exception\RequestInvalidTimestampException;
-use MaxBeckers\AmazonAlexa\Request\Request;
-use MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest;
-use MaxBeckers\AmazonAlexa\Validation\RequestValidator;
+use Winegard\AmazonAlexa\Exception\RequestInvalidSignatureException;
+use Winegard\AmazonAlexa\Exception\RequestInvalidTimestampException;
+use Winegard\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
+use Winegard\AmazonAlexa\Validation\RequestValidator;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;

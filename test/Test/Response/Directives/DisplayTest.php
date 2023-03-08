@@ -1,16 +1,16 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives;
+namespace Winegard\AmazonAlexa\Test\Response\Directives;
 
 use ArrayObject;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\HintDirective;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\Image;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\ImageSource;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\ListItem;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\RenderTemplateDirective;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\Template;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\Text;
-use MaxBeckers\AmazonAlexa\Response\Directives\Display\TextContent;
+use Winegard\AmazonAlexa\Response\Directives\Display\HintDirective;
+use Winegard\AmazonAlexa\Response\Directives\Display\Image;
+use Winegard\AmazonAlexa\Response\Directives\Display\ImageSource;
+use Winegard\AmazonAlexa\Response\Directives\Display\ListItem;
+use Winegard\AmazonAlexa\Response\Directives\Display\RenderTemplateDirective;
+use Winegard\AmazonAlexa\Response\Directives\Display\Template;
+use Winegard\AmazonAlexa\Response\Directives\Display\Text;
+use Winegard\AmazonAlexa\Response\Directives\Display\TextContent;
 use PHPUnit\Framework\TestCase;
 
 /**

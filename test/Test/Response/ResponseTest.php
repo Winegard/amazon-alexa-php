@@ -1,8 +1,8 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response;
+namespace Winegard\AmazonAlexa\Test\Response;
 
-use MaxBeckers\AmazonAlexa\Response\Response;
+use Winegard\AmazonAlexa\Response\Response;
 use PHPUnit\Framework\TestCase;
 
 /**

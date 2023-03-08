@@ -1,9 +1,9 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Test\Response\Directives\Dialog;
+namespace Winegard\AmazonAlexa\Test\Response\Directives\Dialog;
 
-use MaxBeckers\AmazonAlexa\Intent\Intent;
-use MaxBeckers\AmazonAlexa\Response\Directives\Dialog\ElicitSlotDirective;
+use Winegard\AmazonAlexa\Intent\Intent;
+use Winegard\AmazonAlexa\Response\Directives\Dialog\ElicitSlotDirective;
 use PHPUnit\Framework\TestCase;
 
 /**

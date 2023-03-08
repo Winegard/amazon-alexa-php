@@ -10,7 +10,7 @@ This library is a helper for amazon echo (alexa) skills with php. With this libr
 ## Install via composer
 Require the package with composer:
 ```
-composer require maxbeckers/amazon-alexa-php
+composer require winegard/winegard-alexa-php
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Handle the request:
 ### Map request data to request object
 Map needed request headers and request body to `Request`.
 ```php
-use MaxBeckers\AmazonAlexa\Request\Request;
+use Winegard\AmazonAlexa\Request\Request;
 ...
 $requestBody  = file_get_contents('php://input');
 $alexaRequest = Request::fromAmazonRequest($requestBody, $_SERVER['HTTP_SIGNATURECERTCHAINURL'], $_SERVER['HTTP_SIGNATURE']);
@@ -32,7 +32,7 @@ $alexaRequest = Request::fromAmazonRequest($requestBody, $_SERVER['HTTP_SIGNATUR
 ### Validate request
 The `RequestValidator` will handle the amazon request validation.
 ```php
-use MaxBeckers\AmazonAlexa\Validation\RequestValidator;
+use Winegard\AmazonAlexa\Validation\RequestValidator;
 ...
 $validator = new RequestValidator();
 $validator->validate($alexaRequest);
@@ -40,14 +40,14 @@ $validator->validate($alexaRequest);
 ### Register request handlers
 For different requests it's helpful to create different RequestHandlers.
 ```php
-use MaxBeckers\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
+use Winegard\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
 ...
 $requestHandlerRegistry = new RequestHandlerRegistry();
 $requestHandlerRegistry->addHandler($myRequestHandler);
 ```
 ### Use registry to handle request
 ```php
-use MaxBeckers\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
+use Winegard\AmazonAlexa\RequestHandler\RequestHandlerRegistry;
 ...
 $requestHandler = $requestHandlerRegistry->getSupportingHandler($alexaRequest);
 $response       = $requestHandler->handleRequest($alexaRequest);
@@ -71,13 +71,13 @@ Then implement the abstract `supportsRequest`-method.
 ```php
 public function supportsRequest(Request $request): bool
 {
-    return $request->request instanceOf MaxBeckers\AmazonAlexa\Request\Request\Standard\IntentRequest &&
+    return $request->request instanceOf Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest &&
         'MyTestIntent' === $request->request->intent->name;
 }
 ```
 Then implement the `handleRequest`-method. For simple responses there is a `ResponseHelper`.
 ```php
-use MaxBeckers\AmazonAlexa\Helper\ResponseHelper;
+use Winegard\AmazonAlexa\Helper\ResponseHelper;
 ...
 public function handleRequest(Request $request): Response
 {

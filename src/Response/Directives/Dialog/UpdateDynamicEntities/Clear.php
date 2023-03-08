@@ -1,6 +1,6 @@
 <?php
 
-namespace MaxBeckers\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities;
+namespace Winegard\AmazonAlexa\Response\Directives\Dialog\UpdateDynamicEntities;
 
 class Clear extends UpdateDynamicEntities
 {
