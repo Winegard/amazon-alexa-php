@@ -1,5 +1,5 @@
 {
-  "name": "maxbeckers/amazon-alexa-php",
+  "name": "winegard/winegard-alexa-php",
   "type": "library",
   "description": "Php library for amazon echo (alexa) skill development.",
   "keywords": [
@@ -28,8 +28,8 @@
   },
   "authors": [
     {
-      "name": "Maximilian Beckers",
-      "email": "beckers.maximilian@gmail.com",
+      "name": "Winegard Developer",
+      "email": "developer@winegard.com",
       "role": "Developer"
     }
   ],
