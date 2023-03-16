@@ -51,6 +51,27 @@ class AccountInformationHelper
     }
 
     /**
+     * @param Request $request
+     *
+     * @throws MissingRequestDataException
+     *
+     * @return null|string
+     */
+    public function getGivenName(Request $request): ?string
+    {
+        if (!isset($request->context->system->apiAccessToken, $request->context->system->apiEndpoint)) {
+            throw new MissingRequestDataException();
+        }
+
+        $token    = $request->context->system->apiAccessToken;
+        $endpoint = $request->context->system->apiEndpoint;
+
+        $url = sprintf('%s/v2/accounts/~current/settings/Profile.givenName', $endpoint);
+
+        return $this->apiCall($url, $token);
+    }
+
+    /**
      * @param string $url
      * @param string $token
      *
