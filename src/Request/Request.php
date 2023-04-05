@@ -160,7 +160,6 @@ class Request
      */
     private function setRequest(array $amazonRequest)
     {
-
         if (!isset($amazonRequest['request']['type']) || !isset(self::REQUEST_TYPES[$amazonRequest['request']['type']])) {
             throw new MissingRequestDataException();
         }
