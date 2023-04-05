@@ -33,7 +33,7 @@ class MessagingReceived extends AbstractRequest
     {
         $this->requestId = $amazonRequest['requestId'];
 
-        $this->setTime('timestamp', $amazonRequest['timeStamp']);
+        $this->setTime('timestamp', $amazonRequest['timestamp']);
     }
 
     private function setTime($attribute, $value)
