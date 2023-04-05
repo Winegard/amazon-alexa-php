@@ -9,32 +9,51 @@ use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
  */
 class MessagingReceived extends AbstractRequest
 {
-    const DIALOG_STATE_STARTED     = 'STARTED';
-    const DIALOG_STATE_IN_PROGRESS = 'IN_PROGRESS';
-    const DIALOG_STATE_COMPLETED   = 'COMPLETED';
+    /**
+     * @var string
+     */
+    public $eventCreationTime;
+
+    /**
+     * @var string
+     */
+    public $eventPublishingTime;
+
+    /**
+     * @var string
+     */
+    public $requestId;
 
     const TYPE = 'Messaging.MessageReceived';
 
     /**
-     * @var string|null
+     * @param array $amazonRequest
      */
-    public $dialogState;
+    protected function setRequestData(array $amazonRequest)
+    {
+        $this->requestId = $amazonRequest['requestId'];
 
-    /**
-     * @var Intent|null
-     */
-    public $intent;
+        $this->setTime('timestamp', $amazonRequest['timeStamp']);
+    }
+
+    private function setTime($attribute, $value)
+    {
+        //Workaround for amazon developer console sending unix timestamp
+        try {
+            $this->{$attribute} = new \DateTime($value);
+        } catch (\Exception $e) {
+            $this->{$attribute} = (new \DateTime())->setTimestamp(intval($value / 1000));
+        }
+    }
 
     /**
      * @inheritdoc
      */
     public static function fromAmazonRequest(array $amazonRequest): AbstractRequest
     {
-        $request = new static();
+        $request = new self();
 
-        $request->type        = static::TYPE;
-        $request->dialogState = PropertyHelper::checkNullValueString($amazonRequest, 'dialogState');
-        $request->intent      = Intent::fromAmazonRequest($amazonRequest['intent']);
+        $request->type = self::TYPE;
         $request->setRequestData($amazonRequest);
 
         return $request;
