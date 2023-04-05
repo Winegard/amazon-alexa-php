@@ -27,7 +27,7 @@ class MessagingReceived extends AbstractRequest
     protected function setRequestData(array $amazonRequest)
     {
         $this->requestId = $amazonRequest['requestId'];
-        $this->message = $amazonRequest['message']->verbiage;
+        $this->message = $amazonRequest['message']['verbiage'];
 
         $this->setTime('timestamp', $amazonRequest['timestamp']);
     }
