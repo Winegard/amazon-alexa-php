@@ -14,6 +14,11 @@ class MessagingReceived extends AbstractRequest
      */
     public $requestId;
 
+    /**
+     * @var string
+     */
+    public $message;
+
     const TYPE = 'Messaging.MessageReceived';
 
     /**
@@ -22,6 +27,7 @@ class MessagingReceived extends AbstractRequest
     protected function setRequestData(array $amazonRequest)
     {
         $this->requestId = $amazonRequest['requestId'];
+        $this->message = $amazonRequest['message']->verbiage;
 
         $this->setTime('timestamp', $amazonRequest['timestamp']);
     }
