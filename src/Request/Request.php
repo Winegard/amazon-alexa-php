@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Request;
 use Winegard\AmazonAlexa\Exception\MissingRequestDataException;
 use Winegard\AmazonAlexa\Exception\MissingRequiredHeaderException;
 use Winegard\AmazonAlexa\Helper\PropertyHelper;
-use Winegard\AmazonAlexa\Request\Messaging\MessagingReceived;
+use Winegard\AmazonAlexa\Request\Request\Messaging\MessagingReceived;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillAccountLinkedRequest;
 use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledRequest;
