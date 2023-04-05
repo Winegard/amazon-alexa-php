@@ -1,6 +1,6 @@
 <?php
 
-namespace Winegard\AmazonAlexa\Request\Messaging;
+namespace Winegard\AmazonAlexa\Request\Request\Messaging;
 
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
