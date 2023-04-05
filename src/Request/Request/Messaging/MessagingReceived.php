@@ -12,16 +12,6 @@ class MessagingReceived extends AbstractRequest
     /**
      * @var string
      */
-    public $eventCreationTime;
-
-    /**
-     * @var string
-     */
-    public $eventPublishingTime;
-
-    /**
-     * @var string
-     */
     public $requestId;
 
     const TYPE = 'Messaging.MessageReceived';
