@@ -6,7 +6,7 @@ use Winegard\AmazonAlexa\Response\Response;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class ResponseTest extends TestCase
 {

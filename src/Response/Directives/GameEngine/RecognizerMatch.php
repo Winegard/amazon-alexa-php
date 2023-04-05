@@ -3,7 +3,7 @@
 namespace Winegard\AmazonAlexa\Response\Directives\GameEngine;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class RecognizerMatch extends Recognizer
 {

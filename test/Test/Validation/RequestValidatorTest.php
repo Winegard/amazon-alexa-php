@@ -13,7 +13,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class RequestValidatorTest extends TestCase
 {

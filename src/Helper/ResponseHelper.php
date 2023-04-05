@@ -12,7 +12,7 @@ use Winegard\AmazonAlexa\Response\ResponseBody;
 /**
  * This helper class can create simple responses for the most needed intents.
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class ResponseHelper
 {

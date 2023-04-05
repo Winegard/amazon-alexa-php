@@ -6,7 +6,7 @@ use Winegard\AmazonAlexa\Exception\MissingRequestHandlerException;
 use Winegard\AmazonAlexa\Request\Request;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class RequestHandlerRegistry
 {

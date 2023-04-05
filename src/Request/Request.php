@@ -5,6 +5,7 @@ namespace Winegard\AmazonAlexa\Request;
 use Winegard\AmazonAlexa\Exception\MissingRequestDataException;
 use Winegard\AmazonAlexa\Exception\MissingRequiredHeaderException;
 use Winegard\AmazonAlexa\Helper\PropertyHelper;
+use Winegard\AmazonAlexa\Request\Messaging\MessagingReceived;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillAccountLinkedRequest;
 use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillDisabledRequest;
@@ -30,7 +31,7 @@ use Winegard\AmazonAlexa\Request\Request\System\ConnectionsResponseRequest;
 use Winegard\AmazonAlexa\Request\Request\System\ExceptionEncounteredRequest;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class Request
 {
@@ -69,6 +70,8 @@ class Request
         SkillDisabledRequest::TYPE           => SkillDisabledRequest::class,
         SkillPermissionAcceptedRequest::TYPE => SkillPermissionAcceptedRequest::class,
         SkillPermissionChangedRequest::TYPE  => SkillPermissionChangedRequest::class,
+        // Messaging received event type
+        MessagingReceived::TYPE              => MessagingReceived::class,
     ];
 
     /**
@@ -157,6 +160,7 @@ class Request
      */
     private function setRequest(array $amazonRequest)
     {
+
         if (!isset($amazonRequest['request']['type']) || !isset(self::REQUEST_TYPES[$amazonRequest['request']['type']])) {
             throw new MissingRequestDataException();
         }

@@ -1,21 +1,19 @@
 <?php
 
-namespace Winegard\AmazonAlexa\Request\Request\Standard;
+namespace Winegard\AmazonAlexa\Request\Messaging;
 
-use Winegard\AmazonAlexa\Helper\PropertyHelper;
-use Winegard\AmazonAlexa\Intent\Intent;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
  * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
-class IntentRequest extends StandardRequest
+class MessagingReceived extends AbstractRequest
 {
     const DIALOG_STATE_STARTED     = 'STARTED';
     const DIALOG_STATE_IN_PROGRESS = 'IN_PROGRESS';
     const DIALOG_STATE_COMPLETED   = 'COMPLETED';
 
-    const TYPE = 'IntentRequest';
+    const TYPE = 'Messaging.MessageReceived';
 
     /**
      * @var string|null

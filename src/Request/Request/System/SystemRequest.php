@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Request\Request\System;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 abstract class SystemRequest extends AbstractRequest
 {

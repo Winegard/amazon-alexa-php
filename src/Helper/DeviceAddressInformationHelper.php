@@ -12,7 +12,7 @@ use Winegard\AmazonAlexa\Request\Request;
  * This helper class can call the amazon api to get address information.
  * For more details @see https=>//developer.amazon.com/de/docs/custom-skills/device-address-api.html.
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class DeviceAddressInformationHelper
 {

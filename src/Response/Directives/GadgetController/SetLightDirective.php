@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Response\Directives\GadgetController;
 use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class SetLightDirective extends Directive
 {

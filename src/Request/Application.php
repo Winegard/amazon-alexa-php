@@ -7,7 +7,7 @@ use Winegard\AmazonAlexa\Helper\PropertyHelper;
 /**
  * Represents the current Skill.
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class Application
 {

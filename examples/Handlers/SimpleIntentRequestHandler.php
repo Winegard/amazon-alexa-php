@@ -9,7 +9,7 @@ use Winegard\AmazonAlexa\Response\Response;
 /**
  * Just a simple example request handler.
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class SimpleIntentRequestHandler extends AbstractRequestHandler
 {

@@ -11,7 +11,7 @@ use Winegard\AmazonAlexa\Response\Response;
  * Just a simple example request handler for a card response.
  * To create a response with an image @see https://developer.amazon.com/de/docs/custom-skills/include-a-card-in-your-skills-response.html#creating-a-home-card-to-display-text-and-an-image
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class CardResponseRequestHandler extends AbstractRequestHandler
 {

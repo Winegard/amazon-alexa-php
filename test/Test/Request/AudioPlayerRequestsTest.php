@@ -11,7 +11,7 @@ use Winegard\AmazonAlexa\Request\Request\AudioPlayer\PlaybackStoppedRequest;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class AudioPlayerRequestsTest extends TestCase
 {

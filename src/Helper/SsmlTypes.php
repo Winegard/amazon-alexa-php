@@ -3,7 +3,7 @@
 namespace Winegard\AmazonAlexa\Helper;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 interface SsmlTypes
 {

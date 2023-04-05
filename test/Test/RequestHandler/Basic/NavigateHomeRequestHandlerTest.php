@@ -10,7 +10,7 @@ use Winegard\AmazonAlexa\Response\ResponseBody;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class NavigateHomeRequestHandlerTest extends TestCase
 {

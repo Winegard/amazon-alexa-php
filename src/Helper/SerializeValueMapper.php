@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Helper;
 /**
  * This trait is helpful for the property to ArrayObject mapping.
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 trait SerializeValueMapper
 {

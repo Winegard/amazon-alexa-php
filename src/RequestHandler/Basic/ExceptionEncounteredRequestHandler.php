@@ -9,7 +9,7 @@ use Winegard\AmazonAlexa\RequestHandler\AbstractRequestHandler;
 use Winegard\AmazonAlexa\Response\Response;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class ExceptionEncounteredRequestHandler extends AbstractRequestHandler
 {

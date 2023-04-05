@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Helper;
 /**
  * This helper class simplifies the property handling.
  *
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class PropertyHelper
 {

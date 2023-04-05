@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class SkillEnabledRequest extends AlexaSkillEventRequest
 {

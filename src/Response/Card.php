@@ -6,7 +6,7 @@ use Winegard\AmazonAlexa\Exception\InvalidCardPermissionsException;
 use Winegard\AmazonAlexa\Helper\SerializeValueMapper;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class Card implements \JsonSerializable
 {

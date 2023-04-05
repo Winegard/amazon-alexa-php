@@ -13,7 +13,7 @@ use Winegard\AmazonAlexa\Response\Directives\Display\ImageSource;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class AudioTest extends TestCase
 {

@@ -6,7 +6,7 @@ use Winegard\AmazonAlexa\Intent\Intent;
 use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
- * @author Maximilian Beckers <beckers.maximilian@gmail.com>
+ * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
 class ConfirmIntentDirective extends Directive
 {
