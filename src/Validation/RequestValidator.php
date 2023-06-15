@@ -70,7 +70,7 @@ class RequestValidator
      */
     private function validateTimestamp(Request $request)
     {
-        if (null === $request->request || !$request->request->validateTimestamp()) {
+        if (null === $request->request || $request->request->type === 'AlexaSkillEvent.ProactiveSubscriptionChanged' || !$request->request->validateTimestamp()) {
             return;
         }
 
