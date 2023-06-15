@@ -130,12 +130,6 @@ class Request
         $request->amazonRequestBody     = $amazonRequestBody;
         $amazonRequest                  = (array) json_decode($amazonRequestBody, true);
 
-        error_log("amazonRequest ::::");
-        error_log(json_encode($amazonRequest));
-
-        error_log("amazonRequest :::: REQUEST");
-        error_log(json_encode($amazonRequest['request']));
-
         $request->version = PropertyHelper::checkNullValueString($amazonRequest, 'version');
         $request->session = isset($amazonRequest['session']) ? Session::fromAmazonRequest($amazonRequest['session']) : null;
         $request->context = isset($amazonRequest['context']) ? Context::fromAmazonRequest($amazonRequest['context']) : null;
