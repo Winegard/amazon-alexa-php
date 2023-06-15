@@ -7,14 +7,34 @@ use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 /**
  * @author Nicholas Bekeris <nick.bekeris@winegard.com>
  */
-class ProactiveSubscriptionChangedRequest extends AlexaSkillEventRequest
+class ProactiveSubscriptionChangedRequest extends AbstractRequest
 {
     const TYPE = 'AlexaSkillEvent.ProactiveSubscriptionChanged';
+    /**
+     * @var string[]
+     */
+    public $subscriptions;
 
     /**
-     * @var SkillPermissionBody|null
+     * @param array $amazonRequest
      */
-    public $body;
+    protected function setRequestData(array $amazonRequest)
+    {
+        $body = (array) $amazonRequest['body'];
+        $this->subscriptions = $body['subscriptions'];
+
+        $this->setTime('timestamp', $amazonRequest['timestamp']);
+    }
+
+    private function setTime($attribute, $value)
+    {
+        //Workaround for amazon developer console sending unix timestamp
+        try {
+            $this->{$attribute} = new \DateTime($value);
+        } catch (\Exception $e) {
+            $this->{$attribute} = (new \DateTime())->setTimestamp(intval($value / 1000));
+        }
+    }
 
     /**
      * @inheritdoc
