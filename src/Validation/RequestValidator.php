@@ -76,7 +76,7 @@ class RequestValidator
 
         $differenceInSeconds = time() - $request->request->timestamp->getTimestamp();
 
-        if ($differenceInSeconds > $this->timestampTolerance) {
+        if ($differenceInSeconds > $this->timestampTolerance && $request->request->type !== 'AlexaSkillEvent.ProactiveSubscriptionChanged') {
             throw new RequestInvalidTimestampException('Invalid timestamp.');
         }
     }
