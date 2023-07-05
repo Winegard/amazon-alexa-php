@@ -164,7 +164,7 @@ class RequestValidator
     {
         error_log("VERIFY AMAZON CERTIFICATE");
         error_log("AMAZONG REQUEST BODY");
-        error_log(json_encode($request->amazonRequestBody));
+        error_log(json_encode($request->request));
         error_log("AMAZONG SIGNATURE");
         error_log(json_encode($request->signature));
         error_log("CERTIFICATE DATA");
