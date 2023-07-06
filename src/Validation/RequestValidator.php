@@ -100,9 +100,6 @@ class RequestValidator
         // validate cert url
         $this->validateCertUrl($request);
 
-        error_log("LOCAL CERT PATH URL");
-        error_log($request->signatureCertChainUrl);
-
         // generate local cert path
         $localCertPath = sys_get_temp_dir().DIRECTORY_SEPARATOR.md5($request->signatureCertChainUrl).'.pem';
 
@@ -165,12 +162,6 @@ class RequestValidator
      */
     private function verifyCert(Request $request, string $certData)
     {
-        error_log("VERIFY AMAZON CERTIFICATE");
-        error_log("AMAZONG REQUEST BODY");
-        error_log(json_encode($request->request));
-        error_log("AMAZONG SIGNATURE");
-        error_log(json_encode($request->signature));
-
         if (1 !== @openssl_verify($request->amazonRequestBody, base64_decode($request->signature, true), $certData, 'sha1')) {
             throw new RequestInvalidSignatureException('Cert ssl verification failed.');
         }
