@@ -141,14 +141,18 @@ class RequestValidator
      */
     private function fetchCertData(Request $request, string $localCertPath): string
     {
-        $response = $this->client->request('GET', $request->signatureCertChainUrl);
+        if (!file_exists($localCertPath)) {
+            $response = $this->client->request('GET', $request->signatureCertChainUrl);
 
-        if ($response->getStatusCode() !== 200) {
-            throw new RequestInvalidSignatureException('Can\'t fetch cert from URL.');
+            if ($response->getStatusCode() !== 200) {
+                throw new RequestInvalidSignatureException('Can\'t fetch cert from URL.');
+            }
+
+            $certData = $response->getBody()->getContents();
+            @file_put_contents($localCertPath, $certData);
+        } else {
+            $certData = @file_get_contents($localCertPath);
         }
-
-        $certData = $response->getBody()->getContents();
-        @file_put_contents($localCertPath, $certData);
 
         return $certData;
     }
