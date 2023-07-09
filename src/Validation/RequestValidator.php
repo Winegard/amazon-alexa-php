@@ -139,6 +139,7 @@ class RequestValidator
     private function fetchCertData(Request $request, string $localCertPath): string
     {
         if (!file_exists($localCertPath)) {
+            error_log("###### LOCAL CERT PATH NOT FOUND");
             $response = $this->client->request('GET', $request->signatureCertChainUrl);
 
             if ($response->getStatusCode() !== 200) {
@@ -148,6 +149,7 @@ class RequestValidator
             $certData = $response->getBody()->getContents();
             @file_put_contents($localCertPath, $certData);
         } else {
+            error_log("###### LOCAL CERT PATH WAS FOUND");
             $certData = @file_get_contents($localCertPath);
         }
 
@@ -165,7 +167,12 @@ class RequestValidator
         error_log("##### VERIFY CERT DATA");
         error_log($certData);
 
-        if (1 !== @openssl_verify($request->amazonRequestBody, base64_decode($request->signature, true), $certData, 'sha1')) {
+        $Signature_Content = $_SERVER['HTTP_SIGNATURE'];
+        $Signature_PublicKey = openssl_pkey_get_public($certData);
+        $Signature_PublicKey_Data = openssl_pkey_get_details($Signature_PublicKey);
+        $Signature_Content_Decoded = base64_decode($Signature_Content);
+
+        if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
             error_log(openssl_error_string());
             throw new RequestInvalidSignatureException('Cert ssl verification failed.');
         }
