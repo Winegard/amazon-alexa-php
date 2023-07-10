@@ -163,6 +163,8 @@ class RequestValidator
      */
     private function verifyCert(Request $request, string $certData)
     {
+        error_log("##### CERT DATAA");
+        error_log($certData);
         $Signature_Content = $_SERVER['HTTP_SIGNATURE'];
         $Signature_PublicKey = openssl_pkey_get_public($certData);
         error_log("##### VSignature_PublicKey");
@@ -171,8 +173,6 @@ class RequestValidator
         error_log("##### VSignature_PublicKey_Data");
         error_log(json_encode($Signature_PublicKey_Data));
         $Signature_Content_Decoded = base64_decode($Signature_Content);
-        error_log("##### VSignature_Content_Decoded");
-        error_log($Signature_Content_Decoded);
 
         if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
             error_log(openssl_error_string());
