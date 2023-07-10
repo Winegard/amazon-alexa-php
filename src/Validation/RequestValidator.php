@@ -166,10 +166,10 @@ class RequestValidator
         $Signature_Content = $_SERVER['HTTP_SIGNATURE'];
         $Signature_PublicKey = openssl_pkey_get_public($certData);
         error_log("##### VSignature_PublicKey");
-        error_log($Signature_PublicKey);
+        error_log(json_encode($Signature_PublicKey));
         $Signature_PublicKey_Data = openssl_pkey_get_details($Signature_PublicKey);
         error_log("##### VSignature_PublicKey_Data");
-        error_log($Signature_PublicKey_Data);
+        error_log(json_encode($Signature_PublicKey_Data));
         $Signature_Content_Decoded = base64_decode($Signature_Content);
         error_log("##### VSignature_Content_Decoded");
         error_log($Signature_Content_Decoded);
