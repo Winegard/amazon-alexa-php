@@ -138,20 +138,19 @@ class RequestValidator
      */
     private function fetchCertData(Request $request, string $localCertPath): string
     {
-        if (!file_exists($localCertPath)) {
-            error_log("###### LOCAL CERT PATH NOT FOUND");
-            $response = $this->client->request('GET', $request->signatureCertChainUrl);
-
-            if ($response->getStatusCode() !== 200) {
-                throw new RequestInvalidSignatureException('Can\'t fetch cert from URL.');
-            }
-
-            $certData = $response->getBody()->getContents();
-            @file_put_contents($localCertPath, $certData);
-        } else {
-            error_log("###### LOCAL CERT PATH WAS FOUND");
-            $certData = @file_get_contents($localCertPath);
+        if (file_exists($localCertPath)) {
+            error_log("###### UNLINK LOCAL CERT");
+            unlink($localCertPath);
         }
+        
+        $response = $this->client->request('GET', $request->signatureCertChainUrl);
+
+        if ($response->getStatusCode() !== 200) {
+            throw new RequestInvalidSignatureException('Can\'t fetch cert from URL.');
+        }
+
+        $certData = $response->getBody()->getContents();
+        @file_put_contents($localCertPath, $certData);
 
         return $certData;
     }
@@ -164,13 +163,16 @@ class RequestValidator
      */
     private function verifyCert(Request $request, string $certData)
     {
-        error_log("##### VERIFY CERT DATA");
-        error_log($certData);
-
         $Signature_Content = $_SERVER['HTTP_SIGNATURE'];
         $Signature_PublicKey = openssl_pkey_get_public($certData);
+        error_log("##### VSignature_PublicKey");
+        error_log($Signature_PublicKey);
         $Signature_PublicKey_Data = openssl_pkey_get_details($Signature_PublicKey);
+        error_log("##### VSignature_PublicKey_Data");
+        error_log($Signature_PublicKey_Data);
         $Signature_Content_Decoded = base64_decode($Signature_Content);
+        error_log("##### VSignature_Content_Decoded");
+        error_log($Signature_Content_Decoded);
 
         if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
             error_log(openssl_error_string());
