@@ -168,14 +168,11 @@ class RequestValidator
 
         if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content, $certData, 'sha1')) {
             error_log(openssl_error_string());
-            if (str_contains(@openssl_error_string(), 'no start line')) {
-                $localCertData = preg_replace('\n/gm', '\n', $certData);
+
+            $localCertData = preg_replace('\n/gm', '\n', $certData);
                 
-                if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content, $localCertData, 'sha1')) {
-                    error_log(openssl_error_string());
-                    throw new RequestInvalidSignatureException('Cert ssl verification failed.');
-                }
-            } else {
+            if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content, $localCertData, 'sha1')) {
+                error_log(openssl_error_string());
                 throw new RequestInvalidSignatureException('Cert ssl verification failed.');
             }
         }
