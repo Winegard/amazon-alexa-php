@@ -163,20 +163,21 @@ class RequestValidator
      */
     private function verifyCert(Request $request, string $certData)
     {
-        error_log("##### CERT DATAA");
-        error_log($certData);
-        $Signature_Content = $_SERVER['HTTP_SIGNATURE'];
-        $Signature_PublicKey = openssl_pkey_get_public($certData);
-        error_log("##### VSignature_PublicKey");
-        error_log(json_encode($Signature_PublicKey));
-        $Signature_PublicKey_Data = openssl_pkey_get_details($Signature_PublicKey);
-        error_log("##### VSignature_PublicKey_Data");
-        error_log(json_encode($Signature_PublicKey_Data));
-        $Signature_Content_Decoded = base64_decode($Signature_Content);
+        // $localCertData = preg_replace('\n/gm', '\n', $certData);
+        $Signature_Content = base64_decode($_SERVER['HTTP_SIGNATURE']);
 
-        if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
+        if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content, $certData, 'sha1')) {
             error_log(openssl_error_string());
-            throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+            if (str_contains(@openssl_error_string(), 'no start line')) {
+                $localCertData = preg_replace('\n/gm', '\n', $certData);
+                
+                if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content, $localCertData, 'sha1')) {
+                    error_log(openssl_error_string());
+                    throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+                }
+            } else {
+                throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+            }
         }
     }
 
