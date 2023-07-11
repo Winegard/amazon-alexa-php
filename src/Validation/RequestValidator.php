@@ -167,12 +167,7 @@ class RequestValidator
         $Signature_Content_Decoded = @base64_decode($request->signature);
 
         if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
-            error_log(openssl_error_string());
-
-            if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha256')) {
-                error_log(openssl_error_string());
-                throw new RequestInvalidSignatureException('Cert ssl verification failed.');
-            }
+            throw new RequestInvalidSignatureException('Cert ssl verification failed.');
         }
     }
 
