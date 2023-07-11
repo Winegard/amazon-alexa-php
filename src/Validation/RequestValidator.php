@@ -139,7 +139,6 @@ class RequestValidator
     private function fetchCertData(Request $request, string $localCertPath): string
     {
         if (file_exists($localCertPath)) {
-            error_log("###### UNLINK LOCAL CERT");
             unlink($localCertPath);
         }
         
@@ -163,11 +162,17 @@ class RequestValidator
      */
     private function verifyCert(Request $request, string $certData)
     {
-        if (1 !== @openssl_verify($request->amazonRequestBody, base64_decode($request->signature, true), $certData, 'sha1')) {
+        $Signature_PublicKey = @openssl_pkey_get_public($certData);
+        $Signature_PublicKey_Data = @openssl_pkey_get_details($Signature_PublicKey);
+        $Signature_Content_Decoded = @base64_decode($request->signature);
+
+        if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
             error_log(openssl_error_string());
 
-            if (openssl_error_string().include(""))
-            throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+            if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha256')) {
+                error_log(openssl_error_string());
+                throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+            }
         }
     }
 
