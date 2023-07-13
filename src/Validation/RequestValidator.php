@@ -165,12 +165,29 @@ class RequestValidator
         $Signature_PublicKey = @openssl_pkey_get_public($certData);
         $Signature_PublicKey_Data = @openssl_pkey_get_details($Signature_PublicKey);
         $Signature_Content_Decoded = @base64_decode($_SERVER['HTTP_SIGNATURE']);
+        $Signature_Content_Decoded_Request = @base64_decode($request->signature);
 
         if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha1')) {
+            error_log(openssl_error_string());
             if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $certData, 'sha1')) {
+                error_log(openssl_error_string());
                 if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $Signature_PublicKey_Data['key'], 'sha256')) {
+                    error_log(openssl_error_string());
                     if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded, $certData, 'sha256')) {
-                        throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+                        error_log(openssl_error_string());
+                        if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded_Request, $certData, 'sha256')) {
+                            error_log(openssl_error_string());
+                            if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded_Request, $certData, 'sha1')) {
+                                error_log(openssl_error_string());
+                                if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded_Request, $Signature_PublicKey_Data['key'], 'sha256')) {
+                                    error_log(openssl_error_string());
+                                    if (1 !== @openssl_verify($request->amazonRequestBody, $Signature_Content_Decoded_Request, $Signature_PublicKey_Data['key'], 'sha1')) {
+                                        error_log(openssl_error_string());
+                                        throw new RequestInvalidSignatureException('Cert ssl verification failed.');
+                                    }
+                                }                            
+                            }
+                        }
                     }
                 }
             }
