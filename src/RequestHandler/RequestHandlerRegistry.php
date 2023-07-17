@@ -34,7 +34,6 @@ class RequestHandlerRegistry
     {
         foreach ($this->requestHandlers as $requestHandler) {
             if ($requestHandler->supportsApplication($request) && $requestHandler->supportsRequest($request)) {
-                error_log("##### FOUND REQUEST HANDLER");
                 return $requestHandler;
             }
         }
