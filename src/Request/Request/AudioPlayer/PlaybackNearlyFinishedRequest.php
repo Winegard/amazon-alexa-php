@@ -6,7 +6,7 @@ use Winegard\AmazonAlexa\Helper\PropertyHelper;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class PlaybackNearlyFinishedRequest extends AudioPlayerRequest
 {

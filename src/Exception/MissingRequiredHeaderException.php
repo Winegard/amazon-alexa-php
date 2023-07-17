@@ -3,7 +3,7 @@
 namespace Winegard\AmazonAlexa\Exception;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class MissingRequiredHeaderException extends \Exception
 {

@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Response\Directives\Display;
 use Winegard\AmazonAlexa\Helper\SerializeValueMapper;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class TextContent implements \JsonSerializable
 {

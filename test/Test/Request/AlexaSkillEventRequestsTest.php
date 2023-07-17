@@ -12,7 +12,7 @@ use Winegard\AmazonAlexa\Request\Request\AlexaSkillEvent\SkillPermissionChangedR
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class AlexaSkillEventRequestsTest extends TestCase
 {

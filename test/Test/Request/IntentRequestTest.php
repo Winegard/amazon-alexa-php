@@ -9,7 +9,7 @@ use Winegard\AmazonAlexa\Request\Request\Standard\IntentRequest;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class IntentRequestTest extends TestCase
 {

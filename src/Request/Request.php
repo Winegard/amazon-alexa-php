@@ -32,7 +32,7 @@ use Winegard\AmazonAlexa\Request\Request\System\ConnectionsResponseRequest;
 use Winegard\AmazonAlexa\Request\Request\System\ExceptionEncounteredRequest;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class Request
 {

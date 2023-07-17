@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Request\Request\Standard;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class LaunchRequest extends StandardRequest
 {

@@ -7,7 +7,7 @@ use Winegard\AmazonAlexa\Intent\Intent;
 use Winegard\AmazonAlexa\Request\Request\AbstractRequest;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class IntentRequest extends StandardRequest
 {

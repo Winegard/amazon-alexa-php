@@ -9,7 +9,7 @@ use Winegard\AmazonAlexa\Response\OutputSpeech;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class ResponseHelperTest extends TestCase
 {

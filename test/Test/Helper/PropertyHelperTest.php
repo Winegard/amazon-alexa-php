@@ -6,7 +6,7 @@ use Winegard\AmazonAlexa\Helper\PropertyHelper;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class PropertyHelperTest extends TestCase
 {

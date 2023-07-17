@@ -3,7 +3,7 @@
 namespace Winegard\AmazonAlexa\Response\Directives\AudioPlayer;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class AudioItem implements \JsonSerializable
 {

@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Helper;
 use Winegard\AmazonAlexa\Exception\InvalidSsmlException;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class SsmlGenerator implements SsmlTypes
 {

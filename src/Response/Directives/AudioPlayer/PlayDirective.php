@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Response\Directives\AudioPlayer;
 use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class PlayDirective extends Directive
 {

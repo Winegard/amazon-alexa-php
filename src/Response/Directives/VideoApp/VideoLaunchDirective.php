@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Response\Directives\VideoApp;
 use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class VideoLaunchDirective extends Directive
 {

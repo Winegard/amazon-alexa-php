@@ -11,7 +11,7 @@ use Winegard\AmazonAlexa\Request\Request;
 /**
  * This is a validator for amazon echo requests. It validates the timestamp of the request and the request signature.
  *
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class RequestValidator
 {

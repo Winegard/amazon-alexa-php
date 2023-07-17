@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Response\Directives\GameEngine;
 use Winegard\AmazonAlexa\Response\Directives\Directive;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class StopInputHandlerDirective extends Directive
 {

@@ -12,7 +12,7 @@ use Winegard\AmazonAlexa\Response\Directives\GameEngine\StopInputHandlerDirectiv
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class GameEngineTest extends TestCase
 {

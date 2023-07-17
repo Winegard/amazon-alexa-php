@@ -5,7 +5,7 @@ namespace Winegard\AmazonAlexa\Response\CanFulfill;
 use Winegard\AmazonAlexa\Response\ResponseBodyInterface;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class CanFulfillResponseBody implements ResponseBodyInterface
 {

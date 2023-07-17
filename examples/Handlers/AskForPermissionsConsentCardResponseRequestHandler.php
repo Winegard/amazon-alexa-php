@@ -10,7 +10,7 @@ use Winegard\AmazonAlexa\Response\Response;
 /**
  * Just a example request handler for a card response with ask for permissions.
  *
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class AskForPermissionsConsentCardResponseRequestHandler extends AbstractRequestHandler
 {

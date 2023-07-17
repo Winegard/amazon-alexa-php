@@ -10,7 +10,7 @@ use Winegard\AmazonAlexa\Request\Request\PlaybackController\PreviousCommandIssue
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author Nicholas Bekeris <nick.bekeris@winegard.com>
+ * @author Maximilian Beckers <beckers.maximilian@gmail.com>
  */
 class PlaybackControllerRequestsTest extends TestCase
 {
