@@ -20,10 +20,14 @@ class ProactiveSubscriptionChangedRequest extends AbstractRequest
      */
     protected function setRequestData(array $amazonRequest)
     {
-        $body = (array) $amazonRequest['body'];
-        $this->subscriptions = $body['subscriptions'];
-
-        $this->setTime('timestamp', $amazonRequest['timestamp']);
+        try {
+            $body = (array) $amazonRequest['body'];
+            $this->subscriptions = $body['subscriptions'];
+    
+            $this->setTime('timestamp', $amazonRequest['timestamp']);
+        } catch (\Exception $e) {
+            $this->setTime('timestamp', 'now');
+        }
     }
 
     private function setTime($attribute, $value)
